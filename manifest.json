@@ -1,7 +1,7 @@
 {
-    "name": "NasExtWallet",
+    "name": "NebulaWallet",
     "default_locale": "en",
-    "description": "The extension for Nebulas Dapp",
+    "description": "The chrome extension for Nebula Wallet",
 
     "version": "0.1.2",
     "manifest_version": 2,
@@ -19,7 +19,7 @@
     },
 
     "browser_action": {
-        "default_title": "Nebulas",
+        "default_title": "Nebula Wallet",
         "default_icon": {
             "19": "images/icon_19.png",
             "38": "images/icon_38.png"
