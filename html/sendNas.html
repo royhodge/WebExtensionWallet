@@ -9,7 +9,7 @@
     <link rel=stylesheet href=css/base.css>
     <link rel=stylesheet href=css/ui-block.css>
     <meta name=viewport content="width=device-width">
-    <title>NEBULAS</title>
+    <title>NEBULA WALLET</title>
     <style>
         .check_list {
             width: 400px;
@@ -77,70 +77,14 @@
                 <div class="icon-address to"></div>
             </div>
             <div class=col>
-                <label for=amount data-i18n=send-nas/amount>Value / Amount to Send</label>
+                <label for=amount data-i18n=send-nas/amount>Amount to Send</label>
                 <div class=number-comma data-data-i18n=amount data-id=amount data-unit=nas data-validate="required number eqgt0"></div>
             </div>
         </div>
-        <div class="form-group row">
-            <div class=col>
-                <label for=limit>
-                    <span data-i18n=gas-limit>Gas Limit</span>
-                </label>
-                <div class=number-comma data-data-i18n=amount data-id=limit data-validate="required number gt0" data-value=200000></div>
-            </div>
-            <div class=col>
-                <label for=price>
-                    <span data-i18n=gas-price>Gas Price</span>
-                    <i>( 1 NAS = 1EWei = 10
-                        <sup>18</sup> Wei )</i>
-                </label>
-                <div class=number-comma data-data-i18n=amount data-id=price data-unit=wei data-validate="required number gt0" data-value=1000000></div>
-            </div>
-        </div>
-        <div class=form-group>
-            <label for=nonce>Nonce</label>
-            <input class=form-control id=nonce data-validate-order-matters="required number gt0">
-        </div>
-        <div id=contract_div class="form-group">
-            <label for=contract>Contract args</label>
-            <input class=form-control id=contract disabled >
-        </div>
+
         <button id=generate class="btn btn-block" data-toggle=modal data-target=#modal-confirm  data-i18n=send-nas/button/generate>Confirm Transaction</button>
         <button id=reject class="btn btn-block" data-i18n=send-nas/button/reject>Reject Transaction</button>
         <button id=rejectAll class="btn btn-block active1" data-i18n=send-nas/button/rejectAll>Reject AllT</button>
-    </div>
-
-    <!-- send -->
-    <div id=transaction class="container transaction">
-        <div class=row>
-            <div class=col-6>
-                <div class=form-group>
-                    <label for=raw data-i18n=send-nas/raw>Raw Transaction</label>
-                    <textarea class=form-control rows=8 id=raw disabled></textarea>
-                </div>
-                <div class=form-group>
-                    <label for=signed data-i18n=send-nas/signed>Signed Transaction</label>
-                    <textarea class=form-control rows=8 id=signed disabled></textarea>
-                </div>
-            </div>
-            <div class="col-6 text-center">
-                <label data-i18n=send-nas/signed_qr>Signed Transaction QR</label>
-                <div id=addressqr></div>
-            </div>
-        </div>
-        <button type=button id=send_transaction class="btn btn-block" data-toggle=modal data-target=#modal-confirm data-i18n=send-nas/send>Send </button>
-
-    </div>
-
-    <!-- Transaction -->
-    <div class="container transaction" id=receipt_div>
-        <span data-i18n=contract/txhash></span>
-        <i data-i18n=contract/clickToCheck></i>&darr;
-        <a id=receipt></a>
-        <div class=form-group>
-            <label for=signed data-i18n=send-nas/receipt>receipt :</label>
-            <textarea id=receipt_state rows=6 class=form-control disabled></textarea>
-        </div>
     </div>
 
     <!-- Modal -->
@@ -181,7 +125,7 @@
 
     <div class=footer></div>
 
-        <script src=../popup.js></script>
+    <script src=../popup.js></script>
     <script src=lib/jquery-3.3.1.min.js></script>
     <script src=lib/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js data-depends=jquery.slim></script>
     <script src=lib/bootbox.min.js data-depends="bootstrap jquery.slim"></script>
